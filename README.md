@@ -6,6 +6,8 @@ This repository contains hands-on Terraform labs, AWS infrastructure exercises, 
 
 The objective is to strengthen Infrastructure as Code (IaC), cloud automation, AWS administration, and platform engineering skills through practical implementations and real-world scenarios.
 
+---
+
 ## Professional Focus
 
 This repository supports my ongoing development in:
@@ -18,6 +20,8 @@ This repository supports my ongoing development in:
 - Cloud Infrastructure Management
 - DevOps Best Practices
 
+---
+
 ## Learning Objectives
 
 - Learn Terraform fundamentals and advanced concepts
@@ -26,6 +30,8 @@ This repository supports my ongoing development in:
 - Develop reusable infrastructure configurations
 - Explore CI/CD integration scenarios
 - Apply infrastructure automation principles
+
+---
 
 ## Technologies
 
@@ -36,6 +42,8 @@ This repository supports my ongoing development in:
 - GitHub
 - Bash
 
+---
+
 ## DevOps Skills
 
 - Infrastructure as Code (IaC)
@@ -45,6 +53,8 @@ This repository supports my ongoing development in:
 - Version Control
 - Platform Engineering Fundamentals
 - Cloud Administration
+
+---
 
 ## Topics Covered
 
@@ -58,6 +68,8 @@ This repository supports my ongoing development in:
 - IAM
 - Modules
 - Jenkins Integration
+
+---
 
 ## Repository Structure
 
@@ -77,6 +89,44 @@ The repository is organized into multiple branches containing lab exercises, exp
 
 Each branch focuses on specific Terraform concepts, AWS services, or automation scenarios.
 
+---
+
+## Lab Progress
+
+| Lab | Topic | Status |
+|------|------|------|
+| practica_1 | Terraform Basics | Completed |
+| practica_2 | Variables and Outputs | Completed |
+| practica_3 | Resources | Completed |
+| practica_4 | AWS Integration | In Progress |
+| practica_5 | State Management | In Progress |
+| practica_jenkins | Jenkins Integration | Planned |
+
+---
+
+## Example Terraform Configuration
+
+```hcl
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_s3_bucket" "terraform_lab" {
+  bucket = "terraform-lab-example"
+}
+
+resource "aws_instance" "web_server" {
+  ami           = "ami-xxxxxxxx"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "TerraformLabServer"
+  }
+}
+```
+
+---
+
 ## Planned Enhancements
 
 - Create reusable Terraform modules
@@ -85,6 +135,9 @@ Each branch focuses on specific Terraform concepts, AWS services, or automation 
 - Integrate Terraform with Jenkins pipelines
 - Implement automated infrastructure deployment workflows
 - Expand AWS architecture examples
+- Add CI/CD automation demonstrations
+
+---
 
 ## Certification Goals
 
@@ -94,8 +147,21 @@ This repository also serves as a practical learning environment for:
 - AWS Certified Cloud Practitioner
 - AWS Solutions Architect – Associate
 
+---
+
 ## Status
 
 **Active Learning Project**
 
 This repository is actively maintained and updated with new Terraform, AWS, and automation exercises as part of my professional development in DevOps, cloud infrastructure, and Infrastructure as Code (IaC).
+
+---
+
+## Author
+
+**Oscar Saucedo**
+
+DevOps Engineer | CI/CD | Jenkins | AWS | Terraform | GitHub | Release Automation
+
+- LinkedIn: www.linkedin.com/in/oscar-saucedo-devops
+- GitHub: github.com/osaucedo2026-lab
